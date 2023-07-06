@@ -13,9 +13,39 @@ article
 {
     flex: 2;
     overflow-y: auto;
+    background-color: antiquewhite;
+    text-align: center;
+    flex-direction: column;
 }
 aside
 {
     flex: 1;
     overflow-y: auto;
+}
+h1
+{
+    font-family: 'padmaa';
+    font-size: 50px;
+    color: cadetblue;
+}
+article p a
+{
+    color: chocolate;
+    text-decoration: none;
+
+}
+.table
+{
+    border: black 3px solid;
+}
+
+td
+{
+    border: black 1px solid;
+    padding: 5px;
+}
+th
+{
+   border: black 2px solid;
+    padding: 5px;
 }

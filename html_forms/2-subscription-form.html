@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Subscription form</title>
+</head>
+<body>
+
+<form>
+    <fieldset>
+        <legend>Subscription Form</legend>
+            <ul>
+              <!-- Name -->
+              <li>
+                <label for="name">Name:
+                  <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="text" name="user_name" id="name" required>
+              </li>
+              <!-- email with a valid email format e.g. user@example.com -->
+              <li>
+                <label for="email address">Email:
+                  <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="email" name="user_email" id="email address" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+              </li>
+              <!-- subscription preference -->
+              <li>
+                <label>Subscription Preference:</label>
+                <input type="radio" name="subscription" id="monthly" value="monthly" required>
+                <label for="monthly">Monthly</label>
+                <input type="radio" name="subscription" id="yearly" value="yearly" required>
+                <label for="yearly">Yearly</label>
+
+              </li>
+            </ul>
+        <button type="submit">Subscribe</button>
+    </fieldset>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Subscription Form</legend>
+            <ul>
+                <!-- Name -->
+                <li>
+                    <label for="name">Name:
+                        <strong><span aria-label="required">*</span></strong>
+                    </label>
+                    <input type="text" name="user_name" id="name" required>
+                </li>
+                <!-- email with a valid email format e.g. user@example.com -->
+                <li>
+                    <label for="email address">Email:
+                        <strong><span aria-label="required">*</span></strong>
+                    </label>
+                    <input type="email" name="user_email" id="email address" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                </li>
+                <!-- feedback options -->
+                <li>
+                    <label>Feedback:
+                        <strong><span aria-label="required">*</span></strong>
+                    </label><br>
+                            <input type="checkbox" name="option1" id="excellent" required>
+                            <label for="excellent">Excellent</label><br>
+
+                            <input type="checkbox" name="option2" id="good" required>
+                            <label for="good">Good</label><br>
+
+                            <input type="checkbox" name="option3" id="average" required>
+                            <label for="average">Average</label><br>
+
+                            <input type="checkbox" name="option4" id="poor" required>
+                            <label for="poor">Poor</label><br>
+                </li>
+
+                <!-- file upload -->
+                <li>
+                    <label for="uploadFile">Upload File:
+                        <strong><span aria-label="required">*</span></strong>
+                    </label>
+                    <input type="file" name="file" id="uploadFile" required>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
